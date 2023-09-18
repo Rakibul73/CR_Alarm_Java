@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textPermissionSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permission Section"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btnBatteryOptimization"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textPermissionSection"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Request Battery Optimization Permission" />
+
+        <Button
+            android:id="@+id/btnNotificationPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBatteryOptimization"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Request Notification Permission" />
+
+        <Button
+            android:id="@+id/btnAlarmPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNotificationPermission"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Request Schedule Exact Alarm Permission" />
+
+        <Button
+            android:id="@+id/btnUseExactAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAlarmPermission"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Request Use Exact Alarm Permission" />
+
+        <Button
+            android:id="@+id/btnSystemAlertWindowPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnUseExactAlarm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="50dp"
+            android:text="Request System Alert Window Permission" />
+
+        <TextView
+            android:id="@+id/textAlarmSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm Schedule"
+            android:layout_below="@+id/btnSystemAlertWindowPermission"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btnStartBackgroundTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAlarmSchedule"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Start Background Task with Alarm-Manager" />
+
+        <Button
+            android:id="@+id/btnStartBackgroundTaskWorker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnStartBackgroundTask"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Start Background Task with Work-Manager" />
+
+        <Button
+            android:id="@+id/btnCancelBackgroundTaskWorker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnStartBackgroundTaskWorker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Cancel Background Task with Work-Manager" />
+
+        <Button
+            android:id="@+id/btnCancelBackgroundTaskAlarmManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCancelBackgroundTaskWorker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Cancel Background Task with Alarm-Manager" />
+
+    </RelativeLayout>
+</ScrollView>
